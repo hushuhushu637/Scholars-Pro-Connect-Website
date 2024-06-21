@@ -49,7 +49,7 @@ import Footer from "./components/common/footer/Footer";
 import Home from "./components/home/Home";
 import Login from "./components/login/login";
 import Register from "./components/register/register";
-// import ContactAdmin from "./components/contact/ContactAdmin";
+import Udaan from "./components/Udaan/Udaan";
 
 function App() {
   return (
@@ -59,14 +59,14 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/contact-admin" element={<ContactAdmin />} /> */}
           <Route path="/courses" element={<CourseHome />} />
           <Route path="/team" element={<Team />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/journal" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/udaan" element={<Udaan />} /> {/* Add the Udaan route */}
         </Routes>
         <Footer />
       </Router>
